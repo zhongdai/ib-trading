@@ -1,6 +1,6 @@
-FROM python:3.7-alpine
+FROM python:3.7-slim
 # required to build grpcio (dependency of google-cloud-xxx pip packages)
-RUN apk update && apk add build-base gcc musl-dev
+RUN apt-get update -y && apt-get install -y build-essential gcc musl-dev
 
 WORKDIR /usr/src/app
 

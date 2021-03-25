@@ -27,7 +27,7 @@ spec:
         - name: GATEWAY
           value: ib-gw-paper
         - name: STRATEGY
-          value: es-random
+          value: es_random
         image: eu.gcr.io/PROJECT_ID/gke/strategy-api:latest
         livenessProbe:
           httpGet:
